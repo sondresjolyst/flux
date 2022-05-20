@@ -1,9 +1,12 @@
 #!/bin/bash
-
+#
 # Normal usage
 # LOCALCLUSTER_ENV=./localcluster.env ./bootstrap.sh
+#
 
-# Required inputs
+##########################################################
+### Required inputs
+##########################################################
 
 if [[ -z "$LOCALCLUSTER_ENV" ]]; then
     echo "ERROR: Please provide LOCALCLUSTER_ENV" >&2
@@ -16,11 +19,16 @@ else
     source "$LOCALCLUSTER_ENV"
 fi
 
+##########################################################
+### Installation
+##########################################################
+
 echo "Starting installation of Flux..."
 
 flux bootstrap github \
-    --owner="$GITHUB_USER" \
-    --repository=Flux \
-    --branch=main \
-    --path=./clusters/my-cluster \
-    --personal
+  --owner="$GITHUB_USER" \
+  --repository="$GIT_REPO" \
+  --branch="$GIT_BRANCH" \
+  --path="$GIT_DIR" \
+  --version="$FLUX_VERSION" \
+  --personal
