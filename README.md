@@ -14,7 +14,7 @@ If your not able to start **./bootstrap.sh** it could be that the file is missin
 Create a file with name **localcluster.env** in root of the project.
 | Name      		    | Example				    | Comment 						    		|
 |-----------------------|---------------------------|-------------------------------------------|
-| export  GITHUB_TOKEN	| ghp_123				    | https://github.com/settings/tokens)       |
+| export  GITHUB_TOKEN	| ghp_123				    | https://github.com/settings/tokens 	    |
 | GITHUB_USER			| sondresjolyst             | Your Github Username						|
 | GIT_REPO				| Flux					    | Github Repository 						|
 | GIT_BRANCH			| master				    | Github Branch								|
@@ -55,6 +55,7 @@ Deploy the yourApp Application
  
 ## Documentation links
 
-| Project   | Links                     |
-|-----------|---------------------------|
-| Flux      | https://fluxcd.io/docs/   |
+| Project   | Links             				        |
+|-----------|-------------------------------------------|
+| Flux      | https://fluxcd.io/docs/					|
+| podinfo	| https://github.com/stefanprodan/podinfo	|
